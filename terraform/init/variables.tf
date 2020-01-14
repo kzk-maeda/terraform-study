@@ -1,8 +1,6 @@
-variable "region" {
-  description = "enter region"
-}
+variable "region" {}
 variable "env" {
-  description = "enter (dev|prd)"
+  description = "enter (tst|dev|prd)"
 }
 variable "profile" {}
 variable "s3_tfstate_bucket_name" {}
