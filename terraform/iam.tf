@@ -25,6 +25,11 @@ data "aws_iam_policy_document" "glue-role_policy" {
         "iam:Get*",
         "iam:PassRole",
         "ec2:Describe*",
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "ec2:RunInstances",
+        "ec2:TerminateInstances",
+        "tag:GetResources",
         "rds:Describe*",
         "cloudformation:Describe*",
         "cloudformation:Get*",
@@ -32,7 +37,11 @@ data "aws_iam_policy_document" "glue-role_policy" {
         "kms:DescribeKey",
         "cloudwatch:GetMetricData",
         "cloudwatch:ListDashboards",
+        "cloudwatch:PutMetricData",
         "logs:GetLogEvents",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
         "cloudformation:CreateStack",
         "cloudformation:DeleteStack"
     ]
